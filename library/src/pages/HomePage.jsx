@@ -6,11 +6,9 @@ class HomePage extends Component {
     let popup = document.getElementById("popup");
     let signin = document.getElementById("signin");
     let signup = document.getElementById("signup");
-    let signinlibrarian = document.getElementById("signinlibrarian");
     let popupHeader = document.getElementById("popupHeader");
     popupHeader.innerHTML = "Login";
     signup.style.display = "none";
-    signinlibrarian.style.display = "none";
     signin.style.display = "block";
     popup.style.display = "block";
   };
@@ -33,18 +31,7 @@ class HomePage extends Component {
     popup.style.display = "block";
   };
 
-  showSigninlibrarian = () => {
-    let popup = document.getElementById("popup");
-    let signin = document.getElementById("signin");
-    let signup = document.getElementById("signup");
-    let signinlibrarian = document.getElementById("signinlibrarian");
-    let popupHeader = document.getElementById("popupHeader");
-    popupHeader.innerHTML = "Librarian Login";
-    signup.style.display = "none";
-    signin.style.display = "none";
-    signinlibrarian.style.display = "block";
-    popup.style.display = "block";
-  };
+
 
   render() {
     return (
@@ -62,19 +49,6 @@ class HomePage extends Component {
               <div className="div1"></div>
               <div className="div2">
                 Don't have an account? <label onClick={this.showSignup}>SIGN UP NOW</label>
-                For Librarian Login <label onClick={this.showSigninlibrarian}> LIBRARIAN SIGN IN</label>
-              </div>
-            </div>
-            <div id="signinlibrarian">
-              <label className="usernameLabel">Username*</label>
-              <input type="text" id="username" />
-              <label className="passwordLabel">Password*</label>
-              <input type="password" id="password" />
-              <div className="forgotpassword">Forgot <label>Password?</label></div>
-              <button className="signinButton">Sign In</button>
-              <div className="div1"></div>
-              <div className="div2">
-                For Learner Login <label onClick={this.showSignin}> LEARNER SIGN IN</label>
               </div>
             </div>
             <div id="signup">
@@ -82,6 +56,13 @@ class HomePage extends Component {
               <input type="text" id="fullname" />
               <label>Email</label>
               <input type="email" id="email" />
+              <label>select Role</label>
+              <select id='role'>
+                <option value=''></option>
+                <option value='1'>Admin</option>
+                <option value='2'>Learner</option>
+                <option value='3'>Librarian</option>
+              </select>
               <label>Password*</label>
               <input type="password" id="password" />
               <label>Confirm Password</label>
@@ -104,8 +85,9 @@ class HomePage extends Component {
             </div>
             <nav className="navbar">
               <a href="/">Home</a>
-              <a href="#about">About Us</a>
               <a href="#contact">Contact Us</a>
+              <a href="#about">About Us</a>
+              
               <label className='signinText' onClick={this.showSignin}>Sign In</label>
             </nav>
           </header>
@@ -159,14 +141,6 @@ class HomePage extends Component {
               <a href="#">Twitter</a>
               <a href="#">Instagram</a>
             </div>
-            <nav className="footer-nav">
-              <a href="#home">Home</a>
-              <a href="#about">About Us</a>
-              <a href="#catalog">Catalog</a>
-              <a href="#signup">Sign Up</a>
-              <a href="#login">Login</a>
-              <a href="#contact">Contact Us</a>
-            </nav>
           </footer>
         </div>
       </div>

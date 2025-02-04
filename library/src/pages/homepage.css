@@ -62,9 +62,10 @@ body {
   font-weight: bold;
   margin-left: 10px;
   margin-right: 20px;
-  color:black;
+  color: black;
 }
-.signinText:hover{
+
+.signinText:hover {
   color: #00bcd4
 }
 
@@ -153,8 +154,7 @@ body {
 }
 
 .footer .contact-details,
-.footer .social-media,
-.footer-nav {
+.footer .social-media {
   margin-bottom: 10px;
 }
 
@@ -280,6 +280,7 @@ input {
 #signin .div2 label:hover {
   color: rgb(13, 150, 104);
 }
+
 #signinlibrarian {
   width: calc(100% - 10px);
   height: calc(100% - 60px);
@@ -318,44 +319,11 @@ input {
   cursor: pointer;
 }
 
-#signinlibrarian .signinButton {
+#signup select {
   width: 100%;
-  height: 35px;
-  background: rgb(208, 77, 20);
-  color: white;
-  cursor: pointer;
-  border: none;
+  height: 30px;
+  border: 1px solid silver;
   border-radius: 3px;
-  font-weight: bold;
-}
-
-#signinlibrarian .signinButton:hover {
-  background: rgb(208, 77, 20);
-}
-
-#signinlibrarian .div1 {
-  width: 100%;
-  height: 80px;
-}
-
-#signinlibrarian .div2 {
-  width: 100%;
-  font-size: 7pt;
-  color: gray;
-  text-align: center;
-}
-
-#signinlibrarian .div2 label {
-  display: block;
-  font-size: 9pt;
-  font-weight: bold;
-  color: rgb(208, 77, 20);
-  padding-top: 5px;
-  cursor: pointer;
-}
-
-#signinlibrarian .div2 label:hover {
-  color: rgb(13, 150, 104);
 }
 
 #signup {
@@ -371,6 +339,7 @@ input {
   display: block;
   padding: 10px 0px 3px 0px;
 }
+
 #signup button {
   width: 100%;
   height: 35px;
