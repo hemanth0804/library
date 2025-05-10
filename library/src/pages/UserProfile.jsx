@@ -28,10 +28,10 @@ class UserProfile extends React.Component {
   showProfile = (response) => {
     try {
       const parsed = JSON.parse(response); // convert text to object
-  
+
       if (parsed && parsed.fullname) {
-        const { fullname, email, role} = parsed;
-        this.setState({ fullname, email, role,  loading: false });
+        const { fullname, email, role } = parsed;
+        this.setState({ fullname, email, role, loading: false });
       } else {
         this.setState({ error: "Invalid user data received", loading: false });
       }
@@ -40,7 +40,6 @@ class UserProfile extends React.Component {
       this.setState({ error: "Failed to parse user data", loading: false });
     }
   };
-  
 
   handleError = (error) => {
     console.error("API call failed:", error);
@@ -66,10 +65,24 @@ class UserProfile extends React.Component {
           <>
             <p><strong>Full Name:</strong> {fullname}</p>
             <p><strong>Email:</strong> {email}</p>
-            <p><strong>Role:</strong> {role === "1" ? "Admin" : role === "2" ? "Librarian" : role === "3" ? "Learner" : "Unknown"}</p>
+            <p>
+              <strong>Role:</strong> 
+              {role === "1" ? "Admin" : role === "2" ? "Librarian" : role === "3" ? "Learner" : "Unknown"}
+            </p>
           </>
         )}
-        <button onClick={this.logout} style={{ marginTop: "1rem", backgroundColor: "#ff5e5e", color: "#fff", border: "none", padding: "0.5rem 1rem", borderRadius: "5px" }}>
+
+        <button
+          onClick={this.logout}
+          style={{
+            marginTop: "1rem",
+            backgroundColor: "#ff5e5e",
+            color: "#fff",
+            border: "none",
+            padding: "0.5rem 1rem",
+            borderRadius: "5px"
+          }}
+        >
           Logout
         </button>
       </div>
