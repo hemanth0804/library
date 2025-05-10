@@ -32,7 +32,7 @@ const BorrowedBooks = ({ currentUser }) => {
   };
 
   const handleReturnClick = (recordId) => {
-    console.log('Selected Record ID:', recordId); // Debug log to verify recordId
+    console.log('Selected Record ID:', recordId); 
     setSelectedRecordId(recordId);
   };
 
@@ -50,7 +50,7 @@ const BorrowedBooks = ({ currentUser }) => {
       {borrowedBooks.length > 0 ? (
         <div className="card-container">
           {borrowedBooks.map((book) => {
-            console.log(book); // Log the whole book object to verify if `id` exists
+            console.log(book); 
             return (
               <div key={book.isbn} className="book-card">
                 <h3 className="text-xl font-semibold mb-1">{book.title}</h3>

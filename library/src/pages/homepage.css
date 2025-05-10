@@ -296,6 +296,83 @@ button:hover, .signinButton:hover {
 #signin .div2 label:hover, #signup div span:hover {
   color: #1e90ff;
 }
+.about-section {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* for responsiveness */
+}
+
+.about-image {
+  flex: 1;
+  max-width: 400px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.about-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.library-highlight {
+  background-color: #f0f4f8;
+  padding: 40px 20px;
+}
+
+.library-highlight-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.highlight-image {
+  flex: 1;
+  max-width: 400px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.highlight-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.highlight-text h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.highlight-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
 @media screen and (max-width: 450px) {
   #popupWindow {
     width: 90%;

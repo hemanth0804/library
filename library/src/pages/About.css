@@ -1,0 +1,82 @@
+.about-container {
+  padding: 1rem;
+  max-width: 64rem;
+  margin: 0 auto;
+  background-color: whitesmoke;
+}
+
+.about-container h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.about-container h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1.7rem;
+  color :black;
+}
+
+.about-container p {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.about-container ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+}
+
+.about-us {
+  padding: 50px 20px;
+  background-color: #ffffff;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1000px;
+  margin: auto;
+  align-items: center;
+
+}
+
+ .about-image img {
+  width: 900px;
+  max-width : 300%;
+  height: 900 px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  margin-bottom:2px;
+  margin-right: 2px;
+  margin-left: 24px;
+  transition:transform 0.3s ease;
+}
+.about-text ul {
+    padding-left:20px;
+    font-size:17px;
+}
+
+.about-text li {
+    margin-bottom: 10px;
+}
+
+.contact {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    font-size:17px
+}
+.header .navbar{
+    margin-right: 20px;
+}

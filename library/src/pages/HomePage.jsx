@@ -223,8 +223,7 @@ class HomePage extends Component {
             </div>
             <nav className="navbar">
               <a href="/">Home</a>
-              <a href="#contact">Contact Us</a>
-              <a href="#about">About Us</a>
+              <a href="/about">About Us</a>
               <label className='signinText' onClick={this.showSignin}>Sign In</label>
             </nav>
           </header>
@@ -252,7 +251,25 @@ class HomePage extends Component {
               </div>
             </div>
           </section>
+          <section className="about-section">
+            <div className="about-content">
+              <img src="/book1.jpg" alt="Library Interior" className="about-image" />
+              <div className="about-text">
+                <h2>Explore Our Library</h2>
+                <p>Discover a world of knowledge, comfort, and convenience in our modern library spaces. From cozy reading corners to high-tech digital zones, we have it all.</p>
+              </div>
+            </div>
+            <section className="library-highlight">
+              <div className="library-highlight-content">
+                <div className="highlight-text">
+                  <h2>Why Choose Our Library?</h2>
+                  <p>We offer an extensive collection of books, digital resources, and a peaceful atmosphere tailored for readers, researchers, and students alike. Our user-friendly system ensures a hassle-free borrowing experience.</p>
+                </div>
+                <img src="/download (1).jpg" alt="Comfortable Reading Space" className="highlight-image" />
+              </div>
+            </section>
 
+          </section>
           <section className="testimonials">
             <h2>What People Say</h2>
             <div className="quotes">
@@ -261,7 +278,7 @@ class HomePage extends Component {
             </div>
           </section>
 
-         <Footer/>
+          <Footer />
         </div>
       </div>
     );
