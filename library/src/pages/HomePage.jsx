@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './HomePage.css';
 import { BASEURL, callApi, setSession } from '../api';
+import Footer from '../components/Footer';
 
 
 
@@ -260,16 +261,7 @@ class HomePage extends Component {
             </div>
           </section>
 
-          <footer className="footer">
-            <div className="contact-details">
-              <p>Contact us at: contact@library.com</p>
-            </div>
-            <div className="social-media">
-              <a href="#">Facebook</a>
-              <a href="#">Twitter</a>
-              <a href="#">Instagram</a>
-            </div>
-          </footer>
+         <Footer/>
         </div>
       </div>
     );
